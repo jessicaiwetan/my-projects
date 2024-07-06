@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Personal Website</title>
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="timeDayDate">
+                <div data-testid="currentTimeUTC">
+                    <p>Current Time(UTC):</p>
+                    </div>
+                    <div data-testid="currentDay">
+                    <p>Current Day of the Week:</p>
+                </div>
+                <div data-testid="currentDate">
+                    <p>Current Date:</p>
+                </div>
+            </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Experience</a></li>
+                        <li><a href="#">Goals for 2years </a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+            <section class="profilePicture">
+                <div data-testid="slackProfilePicture">
+                <img src="./slackProfilePicture.png">
+            </div>
+        </section>
+        <section class="displayName">
+            <div data-testid="slackDisplayName">
+                <div class="About">
+                    <h1><span>H</span>ello, I'm <span data-testid="slackDisplayName">Seiah</span></h1>
+                    <p>I am a Frontend Developer currently based in Delta State, Nigeria. I Strive to Build really Beautiful and Impressive Web Applications through Carefully Crafted code and User-centric Designs.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="others">
+                    <div class="Experience">
+                        <h2>My Experience so far</h2>
+                        <p>Having a modest foundation in HTML and CSS has been an excellent first step in my frontend development journey.
+                             my enjoyment towards the learning process has over the short period of time indicated my aptitude for this field.
+                              as i am now able to build projects from Figma designs demonstrating my understanding of HTML structures and CSS fundamentals for styling.
+                               Building projects is one fantastic way i've been able to solidify my knowledge and apply concepts learned in HTML and CSS. </p>
+
+                               <p>It is also worthy of note that the <span data-testid="hngLink"><a href="https://hng.tech/learn">hng.tech/learn</a></span> tech program helped to facilitate the learning process and kept me on my toes while gaining experiences on tasks.</p>
+                               <p>Other helpful tools like <span data-testid="keywordLink"><a href="https://keyword.dog">keyword.link</a></span> and <span data-testid="scrapeanywebLink"><a href="https://scrapeanyweb.site">scrapeanyweb</a></span> were a mandatory requirement for my first official task on the hng internship marathon program.</p>
+                        
+                        </div>
+                    
+                <div class="two-years-Goal">
+                    <h2 data-testid="goalsTitle">Goals for 2years</h2>
+                  <h3><span>Year 1:</span> Building My Foundation</h3>
+
+<h3>Mastery of Fundamentals:</h3>
+<br>
+<ul>
+<li>Focus on becoming proficient in HTML, CSS, and JavaScript as these are the building blocks of any web page.</li>
+<li>Be comfortable writing clean, well-structured code and understanding how these languages work together.</li>
+<li>Utilize online resources like freeCodeCamp, Codecademy and W3schools to learn the basics.</li>
+</ul>
+<br>
+
+<h3>Learn Responsive Design:</h3>
+<p>Grasp the concepts of responsive designs and building websites that adapt to different screen sizes.</p>
+<br>
+
+<h3>Explore JavaScript Frameworks:</h3>
+<ul>
+<li>Get familiar with popular JavaScript frameworks like React, Vue.js, or Angular. As these frameworks can help build complex web applications more efficiently.</li>
+<li>Build projects to understand their core functionalities.</li>
+</ul>
+<br>
+
+<h3>Practice Version Control:</h3>
+<ul>
+<li>Learn Git, a version control system used by most developers as this will be useful in tracking changes to your code, collaborate with others, and revert to previous versions if needed.</li>
+</ul>
+<br>
+
+<h3>Build a Portfolio:</h3>
+<p>As i learn and complete projects, showcasing my works on a personal portfolio website, will proe valuable when applying for jobs and demonstrate my skills to potential employers.</p>
+<br>
+     </div>
+
+<div class="year-two">
+<h2><span>Year 2:</span> Deepen My Skills and Gain Experience</h2>
+
+<h3>Solidify My Frontend Skillset:</h3>
+<ul>
+                        <li data-testid="goal1">Goal 1: Become proficient in Python and JavaScript.</li>
+                        <li data-testid="goal2">Goal 2: Contribute to open-source projects.</li>
+                        <li data-testid="goal3">Goal 3: Obtain a certification in cloud computing.</li>
+                        <li data-testid="goal4">Goal 4: Build and deploy a full-stack web application.</li>
+                        <li data-testid="goal5">Goal 5: Learn about machine learning and AI.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+            <div class="contact-mail">
+                <div data-testid="slackEmail">
+                <p>Contact Me via email <a href="mailto:jessicaiwetan2@gmail.com"><button data-testid="slackEmail">jessicaiwetan2@gmail.com </button></a></p>
+            </div>
+                
+            </main>
+
+        <script>
+           const currentTimeUTC=document.querySelector('[data-testid="currentTimeUTC"]');
+           const currentDay=document.querySelector('[data-testid="currentDay"]');
+           const currentDate=document.querySelector('[data-testid="currentDate"]');
+
+           setInterval(() => {
+      const now = new Date();
+      currentTimeUTC.textContent = now.toUTCString();
+      currentDay.textContent = now.toLocaleDateString('en-US', { weekday: 'long' });
+      currentDate.textContent = now.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+    }, 1000);
+
+        </script>
+    </body>
+</html>

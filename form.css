@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+a {
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    color:blanchedalmond;
+    text-transform: uppercase;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url('https://i.pinimg.com/originals/de/ac/ac/deacace42ac399c72449e6516ed52d09.jpg');
+    background-size: cover;
+}
+
+.SFA{
+    color: darkgoldenrod;
+    opacity: 0.5px;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: rgb(252, 183, 7);
+    font-weight:600;
+
+}
+
+
+p{
+    font-size: 25px;
+    font-weight: 100;
+    
+}
+.container{
+    width: 200%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px darkgoldenrod;
+}
+
+.form-title{
+    font-size: 26px;
+    font-weight:800;
+    text-align: center;
+    padding-bottom: 6px;
+    color: darkgoldenrod;
+    text-shadow: darkgoldenrod;
+    border-bottom: solid 1px darkgoldenrod;
+
+}
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.user-input-box{
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: darkgoldenrod;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid darkgoldenrod;
+    color: rgb(209, 209, 209);
+    background: darkgoldenrod;
+}
+
+.form-submit-btn{
+    margin-top: 50px;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: darkgoldenrod;
+}
+
+.form-submit-btn input:hover{
+    background: goldenrod;
+    color: rgb(255, 255, 255);
+}
+
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+}
+
+
+.main-user-info{
+    max-height: 380px;
+    overflow: auto;
+}
+
+.main-user-info::-webkit-scrollbar{
+    width: 0;
+}
